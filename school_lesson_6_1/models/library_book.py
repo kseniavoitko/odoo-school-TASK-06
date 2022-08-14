@@ -19,6 +19,7 @@ class LibraryBook(models.Model):
         string='Active',
         default=True,
     )
+    category_id = fields.Many2one(comodel_name='library.book.category')
 
     @api.onchange('reader_id')
     def _onchange_reader_id(self):
@@ -29,4 +30,3 @@ class LibraryBook(models.Model):
         self.ensure_one()
         self.reader_id = self.env.ref(
             'school_lesson_6_1.res_partner_customer').id
-
