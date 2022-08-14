@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+
+    <record id="library_book_category_the_call_of_the_wild" model="library.book">
+        <field name="name">The Call of the Wild 2</field>
+    </record>
+
+    <delete id="library_book_category_20000_leagues_under_the_sea" model="library.book"/>
+
+</odoo>
